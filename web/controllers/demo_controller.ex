@@ -14,10 +14,10 @@ defmodule ElixirExample.DemoController do
 
   # private functions
 
-  defp log(conn) do
-    # url = ElixirExample.Router.Helpers.url(conn) <> conn.request_path
-    Logger.info  "Received request for URL: #{current_url(conn)}"
-  end
+  # defp log(conn) do
+  #   # url = ElixirExample.Router.Helpers.url(conn) <> conn.request_path
+  #   Logger.info  "Received request for URL: #{current_url(conn)}"
+  # end
 
   # returns a string with the IP address of eth0
   defp ip do
