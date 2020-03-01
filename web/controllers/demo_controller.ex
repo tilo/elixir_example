@@ -3,17 +3,18 @@ defmodule ElixirExample.DemoController do
   require Logger
 
   def index(conn, _params) do
-    log(conn)
+    # log(conn)
     text conn, "Hello World from #{ip()} with foo as #{foo()} url: #{current_url(conn)}"
   end
 
   def echo(conn, _params) do
-    log(conn)
+    # log(conn)
     text conn, "loaderio-757ad3993948d06bd057710711dd9a66"
   end
 
+  # private functions
 
-  def log(conn) do
+  defp log(conn) do
     # url = ElixirExample.Router.Helpers.url(conn) <> conn.request_path
     Logger.info  "Received request for URL: #{current_url(conn)}"
   end
