@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :elixir_example, ElixirExample.Endpoint,
   http: [:inet6, port: {:system, "PORT"}],
-  url: [host: "example.com", port: 80],
+  url: [host: "localhost", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
@@ -54,7 +54,7 @@ config :logger, level: :info
 # Alternatively, you can configure exactly which server to
 # start per endpoint:
 #
-#     config :elixir_example, ElixirExample.Endpoint, server: true
+config :elixir_example, ElixirExample.Endpoint, server: true
 #
 
 # Finally import the config/prod.secret.exs
