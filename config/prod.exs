@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :elixir_example, ElixirExample.Endpoint,
   http: [:inet6, port: {:system, "PORT"}],
-  url: [host: "localhost", port: 80],
+  url: [host: "localhost", port: 8080],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
