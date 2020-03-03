@@ -29,7 +29,6 @@ defmodule ElixirExample.DemoController do
 
   # fetch value of ENV variable FOO
   defp foo do
-    {:ok, value} = System.fetch_env("FOO")
-    value
+    System.get_env("FOO") || ""
   end
 end
